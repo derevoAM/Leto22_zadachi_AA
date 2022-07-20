@@ -19,7 +19,7 @@ public:
     Polynom_coef(std::initializer_list<T> in_list) {
         coef_.reserve(in_list.size());
         int i = 0;
-        for (auto it: in_list) coef_.push_back(it);
+        for (auto &it: in_list) coef_.push_back(it);
     }
 
     Polynom_coef(const int &size) {
